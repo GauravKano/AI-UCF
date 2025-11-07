@@ -1,0 +1,67 @@
+---
+import astroLogo from "../assets/astro.svg";
+import background from "../assets/background.svg";
+---
+
+<div class="relative min-h-screen font-sans overflow-hidden">
+  <img
+    src={background.src}
+    alt=""
+    class="absolute inset-0 w-full h-full object-cover blur-3xl -z-10 opacity-80"
+  />
+
+  <main class="flex flex-col justify-center items-start min-h-screen px-6 sm:px-12">
+    <section class="space-y-6">
+      <a href="https://astro.build">
+        <img src={astroLogo.src} width="115" height="48" alt="Astro Homepage" />
+      </a>
+
+      <h1 class="text-2xl sm:text-3xl font-semibold text-gray-800">
+        To get started, open the
+        <code class="bg-gradient-to-r from-pink-400 to-purple-500 bg-clip-text text-transparent font-mono">
+          src/pages
+        </code>
+        directory in your project.
+      </h1>
+
+      <div class="flex flex-wrap gap-4">
+        <a
+          class="px-4 py-2 rounded-lg text-white bg-gradient-to-r from-blue-600 to-purple-500 shadow-md hover:opacity-90 transition"
+          href="https://docs.astro.build"
+        >
+          Read our docs
+        </a>
+        <a
+          class="flex items-center gap-2 text-gray-800 hover:text-gray-600 transition"
+          href="https://astro.build/chat"
+        >
+          Join our Discord
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36" class="w-5 h-5">
+            <path
+              fill="currentColor"
+              d="M107.7 8.07A105.15 105.15 0 0 0 81.47 0a72.06 72.06 0 0 0-3.36 6.83 97.68 97.68 0 0 0-29.11 0A72.37 72.37 0 0 0 45.64 0a105.89 105.89 0 0 0-26.25 8.09C2.79 32.65-1.71 56.6.54 80.21a105.73 105.73 0 0 0 32.17 16.15 77.7 77.7 0 0 0 6.89-11.11..."
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <a
+    href="https://astro.build/blog/astro-5/"
+    class="absolute bottom-4 right-4 bg-white/70 backdrop-blur-xl border border-white rounded-2xl p-4 max-w-xs hover:bg-white/90 transition"
+  >
+    <div class="flex flex-col gap-2">
+      <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M24.667 12c1.333 1.414 2 3.192 2 5.334..."
+          fill="#111827"
+        />
+      </svg>
+      <h2 class="text-xl font-semibold text-gray-900">What's New in Astro 5.0?</h2>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        From content layers to server islands, click to learn more about the new features and improvements in Astro 5.0.
+      </p>
+    </div>
+  </a>
+</div>
